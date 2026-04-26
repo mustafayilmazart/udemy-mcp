@@ -59,7 +59,7 @@ için ya manuel paneli kullanır ya da yarım kalmış scriptler yazar. Bu MCP, 
 
 ```bash
 git clone https://github.com/mustafayilmazart/kesif-udemy-mcp
-cd udemy-mcp
+cd kesif-udemy-mcp
 pip install -r requirements.txt
 cp .env.example .env
 # .env içine UDEMY_INSTRUCTOR_TOKEN= değerini girin

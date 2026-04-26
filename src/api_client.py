@@ -12,7 +12,8 @@ class UdemyAPIClient:
     BASE_URL = "https://www.udemy.com/instructor-api/v1"
 
     def __init__(self):
-        self.token = os.getenv("UDEMY_BEARER_TOKEN", "")
+        # UDEMY_INSTRUCTOR_TOKEN tercih edilir; UDEMY_BEARER_TOKEN geriye dönük uyumluluk için
+        self.token = os.getenv("UDEMY_INSTRUCTOR_TOKEN") or os.getenv("UDEMY_BEARER_TOKEN", "")
         self.headers = {
             "Authorization": f"bearer {self.token}",
             "Accept": "application/json",
@@ -21,7 +22,7 @@ class UdemyAPIClient:
     async def _get(self, endpoint: str, params: Optional[dict] = None) -> dict:
         """API'ye GET istegi gonder."""
         if not self.token or self.token == "your_token_here":
-            return {"hata": "UDEMY_BEARER_TOKEN ayarlanmamis. config/.env dosyasini kontrol edin."}
+            return {"hata": "UDEMY_INSTRUCTOR_TOKEN ayarlanmamis. .env dosyasini kontrol edin."}
 
         async with httpx.AsyncClient(timeout=30) as client:
             resp = await client.get(
