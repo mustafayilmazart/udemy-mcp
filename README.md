@@ -58,7 +58,7 @@ için ya manuel paneli kullanır ya da yarım kalmış scriptler yazar. Bu MCP, 
 ## 🚀 Kurulum
 
 ```bash
-git clone https://github.com/mustafayilmazart/udemy-mcp
+git clone https://github.com/mustafayilmazart/kesif-udemy-mcp
 cd udemy-mcp
 pip install -r requirements.txt
 cp .env.example .env
