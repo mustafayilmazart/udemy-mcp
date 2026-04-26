@@ -1,0 +1,45 @@
+{
+  "kriterler": [
+    { "id": "baslik_seo", "ad": "Baslik SEO", "agirlik": 1.0, "max": 10 },
+    {
+      "id": "aciklama_kalitesi",
+      "ad": "Aciklama Kalitesi",
+      "agirlik": 1.0,
+      "max": 10
+    },
+    {
+      "id": "mufredat_yapisi",
+      "ad": "Mufredat Yapisi",
+      "agirlik": 1.0,
+      "max": 10
+    },
+    { "id": "ders_sureleri", "ad": "Ders Sureleri", "agirlik": 1.0, "max": 10 },
+    {
+      "id": "uygulamali_oran",
+      "ad": "Uygulamali Icerik Orani",
+      "agirlik": 1.0,
+      "max": 10
+    },
+    {
+      "id": "quiz_degerlendirme",
+      "ad": "Quiz/Degerlendirme",
+      "agirlik": 1.0,
+      "max": 10
+    },
+    {
+      "id": "kaynak_materyal",
+      "ad": "Kaynak Materyal",
+      "agirlik": 1.0,
+      "max": 10
+    },
+    { "id": "yorum_analizi", "ad": "Yorum Analizi", "agirlik": 1.0, "max": 10 },
+    { "id": "rekabet", "ad": "Rekabet Analizi", "agirlik": 1.0, "max": 10 },
+    { "id": "guncellik", "ad": "Guncellik", "agirlik": 1.0, "max": 10 }
+  ],
+  "seviyeler": {
+    "mukemmel": { "min": 90, "renk": "#34d399" },
+    "iyi": { "min": 80, "renk": "#60a5fa" },
+    "orta": { "min": 70, "renk": "#fbbf24" },
+    "iyilestirme_gerekli": { "min": 0, "renk": "#f87171" }
+  }
+}
