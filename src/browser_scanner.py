@@ -2,10 +2,19 @@
 
 Bu modul Playwright MCP ile birlikte calisir. Claude, bu talimatlari
 alip Playwright MCP araciligi ile browser'i kontrol eder.
-Instructor panelinden ve ogrenci hesabindan ders ders icerik, altyazi, quiz tarar.
+Instructor panelinden ders ders icerik, altyazi, quiz tarar.
 
-GUVENLIK: Tum tarama islemlerinde hiz siniri uygulanir.
-Udemy'nin bot tespitinden kacinmak icin insan davranisi simule edilir.
+ÖNEMLI ToS UYARISI:
+Udemy Terms of Service §6.5 ve §7 otomatik veri toplama ve scraping'i
+KISITLAR. Bu modul yalnizca KULLANICININ KENDI INSTRUCTOR HESABINI ve
+KENDI ICERIGINI taramak icin saglanmistir. Buna ragmen browser otomasyon
+kullanimi (insan benzeri davranis simule etse de) hesabin asikiya alinmasi
+veya kapatilmasi RISKINI tasiyabilir. Kullanim TAMAMEN KULLANICININ
+SORUMLULUGUNDADIR; bu kodun yazari hicbir hesap aksiyonundan sorumlu
+tutulamaz. Mumkun oldugu surece resmi Instructor API endpoint'lerini
+(api_client.py) tercih edin.
+
+Hiz siniri sadece sunucu yukunu azaltmak icindir; ToS uyumu garantisi vermez.
 """
 
 import json
